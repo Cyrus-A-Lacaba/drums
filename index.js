@@ -3,17 +3,16 @@ $(document).ready(function(){
 
   for (let i=0; i < buttonx.length; i++) {
     $(buttonx[i]).mousedown(function() {
-      makeSomeNoise(buttonx[i].contentText);
-      addAnimation(buttonx[i].contentText);
+      makeSomeNoise(buttonx[i].innerHTML);
+      addAnimation(buttonx[i].innerHTML);
     });
 
     $(buttonx[i]).mouseup(function(){
-      addAnimation(buttonx[i].contentText);
+      addAnimation(buttonx[i].innerHTML);
     });
 
     $(buttonx[i]).on("tap",function(){
-      makeSomeNoise(buttonx[i].contentText);
-      addAnimation(buttonx[i].contentText);
+      makeSomeNoise(buttonx[i].innerHTML);
     });
 
   }
