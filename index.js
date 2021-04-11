@@ -10,6 +10,12 @@ $(document).ready(function(){
     $(buttonx[i]).mouseup(function(){
       addAnimation(buttonx[i].contentText);
     });
+
+    $(buttonx[i]).on("tap",function(){
+      makeSomeNoise(buttonx[i].contentText);
+      addAnimation(buttonx[i].contentText);
+    });
+
   }
 
   $(document).keydown(function(e) {
